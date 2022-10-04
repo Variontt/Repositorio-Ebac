@@ -228,8 +228,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194231}
-  - component: {fileID: 963194230}
   - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
@@ -313,36 +311,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6a95150b6130e5418f4b1ece81e1d5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 38ff0f8a3d13e6c4dbbbe920bd1d96e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cubo: {fileID: 6841973809032491831, guid: 1211d4d3c8e4aa74b943065b0f4f90aa, type: 3}
---- !u!114 &963194230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 745c8a9a6b98ff942b24475c05c79f86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Esfera: {fileID: 6517770415124318422, guid: 3b6054d63f8af8e46b840fc46963628e, type: 3}
---- !u!114 &963194231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 844d7d35e755c9842afd228fa4e3e362, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Capsula: {fileID: 1424947036074693918, guid: 16fe12381dd5db244aa1dda0333bbf3e, type: 3}
 --- !u!1 &1230892302
 GameObject:
   m_ObjectHideFlags: 0
