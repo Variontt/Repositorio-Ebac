@@ -149,7 +149,7 @@ public class VariablesBoleanas : MonoBehaviour
        //
        //         // esto nos ayuda a tener ciertos estados dentro de mi juego dependiendo en que parte estemos (menú, gameplay, etc)
        // }
-
+       //      -------------------
         // Null conditioner operator "  ?   "
         // aqui en el string ponemos una variable (resultado) y esta preguntara si el Valor 01 es mayor o igual que 0
         // si es positivo dara  el primer resultado y si es negativo dara el segundo 
