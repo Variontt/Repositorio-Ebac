@@ -4,20 +4,28 @@ using UnityEngine;
 
 public class ParteUnoTarea07 : MonoBehaviour
 {
+    // --------------------------
+
     public GameObject Cubo;
 
   
 
     int valor01 = 1;
 
+
+
     int LimiteInferior = -1;
     int LimiteSuperior = 1;
+
+
+
 
     public List<GameObject> listaDeCubos;
     public float factorDeEscalamiento;
     public int numcubos = 0;
 
-    // Start is called before the first frame update
+
+    // -------------------------------------
     void Start()
     {
 
@@ -55,7 +63,7 @@ public class ParteUnoTarea07 : MonoBehaviour
 
 
 
-        // ----------- Condicional con valor 1 
+        // ----------- Condicional "valor01" si es menor que cero son de color negro si son mayor que blanco ---------------
         if (valor01 < 0)
         {
             Prefab_GO.GetComponent<MeshRenderer>().material.color = Color.black;
@@ -64,6 +72,10 @@ public class ParteUnoTarea07 : MonoBehaviour
         {
             Prefab_GO.GetComponent<MeshRenderer>().material.color = Color.white;
         }
+        // ---------------------------------
+
+
+        //----------- Eliminador de cubos -------------
 
         listaDeCubos.Add(Prefab_GO);
         List<GameObject> objetosParaEliminar = new List<GameObject>();
