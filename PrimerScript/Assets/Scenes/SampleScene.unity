@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44302335, g: 0.48550695, b: 0.5357699, a: 1}
+  m_IndirectSpecularColor: {r: 0.44084394, g: 0.48195845, b: 0.52872074, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -209,14 +209,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.4505695, y: -0.21294193, z: -0.6569072, w: 0.5657878}
+  m_LocalRotation: {x: 0.49277595, y: -0.060566705, z: -0.8103523, w: 0.31117952}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 13.302, y: -58.858, z: -106.051}
+  m_LocalEulerAnglesHint: {x: 12.036, y: -58.775, z: -144.781}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,14 +294,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.13303918, y: -0, z: -0, w: 0.9911108}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 15.291, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,10 +311,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c3e7cfe93b82d847a6fc758ed3e0040, type: 3}
+  m_Script: {fileID: 11500000, guid: bd2ff84d2c2130d41bccbd6199bcaeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Game_Object_GO: {fileID: 6841973809032491831, guid: 1211d4d3c8e4aa74b943065b0f4f90aa, type: 3}
+  Cubo: {fileID: 6841973809032491831, guid: 1211d4d3c8e4aa74b943065b0f4f90aa, type: 3}
+  listaDeCubos: []
+  factorDeEscalamiento: 0.91
+  numcubos: 0
 --- !u!1 &1230892302
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1230892303
 BoxCollider:
   m_ObjectHideFlags: 0

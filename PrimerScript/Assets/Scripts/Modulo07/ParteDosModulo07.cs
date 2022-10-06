@@ -2,41 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Switcher : MonoBehaviour
+public class ParteDosModulo07 : MonoBehaviour
 {
     public GameObject Cubo;
 
-    bool valorGo01;
-    bool valorGo02;
 
-    int valor01 = 1;
+    bool verObjeto;
 
-    int LimiteInferior = -5;
-    int LimiteSuperior = 5;
 
     public List<GameObject> listaDeCubos;
     public float factorDeEscalamiento;
     public int numcubos = 0;
 
-    // Start is called before the first frame update
+
     void Start()
     {
-
-
         listaDeCubos = new List<GameObject>();
-
-
-
-
     }
 
-    // Update is called once per frame
+   
     void Update()
-    {
-
-    }
-
-    private void FixedUpdate()
     {
         numcubos++;
         GameObject Prefab_GO = Instantiate<GameObject>(Cubo);
@@ -44,17 +29,14 @@ public class Switcher : MonoBehaviour
         Prefab_GO.name = "Cubo Número " + numcubos;
         Prefab_GO.transform.position = Random.insideUnitSphere;
 
-        valor01 = Random.Range(LimiteInferior, LimiteSuperior);
-        Debug.Log(valorGo01);
+         verObjeto = true;
+        Debug.Log(verObjeto);
 
-        if (valor01 >= 0)
+        if (verObjeto) // En el IF statemente usae un boleano y no un intergear como el inciso pasado
         {
             Prefab_GO.GetComponent<MeshRenderer>().material.color = Color.white;
         }
-        else
-        {
-            Prefab_GO.GetComponent<MeshRenderer>().material.color = Color.black;
-        }
+       
 
         listaDeCubos.Add(Prefab_GO);
         List<GameObject> objetosParaEliminar = new List<GameObject>();
@@ -64,7 +46,7 @@ public class Switcher : MonoBehaviour
             escala *= factorDeEscalamiento;
             go.transform.localScale = Vector3.one * escala;
 
-            if (escala <= 0.1)
+            if (escala <= 0.42)
             {
                 objetosParaEliminar.Add(go);
             }

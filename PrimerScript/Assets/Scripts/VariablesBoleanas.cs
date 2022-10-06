@@ -90,9 +90,9 @@ public class VariablesBoleanas : MonoBehaviour
 
         if ((Variable01 && Variable02) || Variable03) // aqui preguntamos primero si variablo 1 y 2 son verdaderos y una vez hecho el resultado se hace el OR variable 3 es verdadera
 
-            // La primera operacion de Variable 01 y 02 Da False por que la variable 2 es falsa pero como después se pregunta o Variable 3 verdadero y en este casi la variable 03 si es verdadera entonces dara un resultado de TRUE
+        // La primera operacion de Variable 01 y 02 Da False por que la variable 2 es falsa pero como después se pregunta o Variable 3 verdadero y en este casi la variable 03 si es verdadera entonces dara un resultado de TRUE
         {
-            Debug.Log("Operación línea 64 Verdadero"); 
+            Debug.Log("Operación línea 64 Verdadero");
         }
 
         else
@@ -122,51 +122,52 @@ public class VariablesBoleanas : MonoBehaviour
 
         Valor01 = Random.Range(LimiteInferior, LimiteSuperior);   //seleccionamos el valor 01 que ya existe y le damos un valor random range con los limites establecidos que ya creamos
         Debug.Log(Valor01); // una vez teniendo esos valores imprimimos el valor
-       // switch (Valor01)     // ahora que tenemos el valor empezamos con nuestra sentencia switch { }
-       // {
-       //     case (int)SeleccionDeColor.rojo:  //los valores de colores que establecimos en los limites superiores o inferiores estan mapeados a valores enteros de 0 a 4
-       //         Debug.Log("El Color seleccionado es Rojo");
-       //         break; //break es para salirnos del switch
-       //     case (int)SeleccionDeColor.verde:
-       //         Debug.Log("El Color seleccionado es Verde");
-       //         break;
-       //     case (int)SeleccionDeColor.azul: // al enum (la lista de colores rojo, verde, etc) tiene valores enteros debemos poner (int) antes de seleccion de color para convertirlo en un valor entero a esto se le llama casteo
-       //         Debug.Log("El Color seleccionado es Azul");
-       //         break;
-       //     case (int)SeleccionDeColor.blanco:
-       //         Debug.Log("El Color seleccionado es Blanco");
-       //         break;
-       //
-       //    // agregamos when para agregar otra condicional si el enum da gris pero (en este caso) la variable01 no es verdadera entonces omitira esta línea y se ira a la siguiente que si sea verdade o falsa dependiendo del operado ( == > ! < <=) que hayamos puesto después de when
-       //     case (int)SeleccionDeColor.gris when Variable01 == true:
-       //         Debug.Log("El Color seleccionado es Gris");
-       //         break;
-       //
-       //
-       //     default: // default es por si el switch escoje uno valor que no definimos (de 5 para arriba)  esto si hacemos el limite superior a un número mayor de 4 (4 son los objetos que tenemos en el enum) si pasara de 5 a 10 ya nos daria el valor default
-       //         Debug.Log("Este valor no existe");
-       //         break;
-       //
-       //         // esto nos ayuda a tener ciertos estados dentro de mi juego dependiendo en que parte estemos (menú, gameplay, etc)
-       // }
-       //      -------------------
-        // Null conditioner operator "  ?   "
-        // aqui en el string ponemos una variable (resultado) y esta preguntara si el Valor 01 es mayor o igual que 0
-        // si es positivo dara  el primer resultado y si es negativo dara el segundo 
-        // toma en cuenta que esto es por que en la línea de codigo de arriba pusimos que el  Valor01 es igual al valor Random.Range de los limites superiores o inferiores con esos limites establecidos ya nos da el número random en este caso de -5 a 5
-        string resultado = (Valor01 >= 0) ? "El valor es positivo" : "el valor es negativo ";
-        Debug.Log(resultado);
+        switch (Valor01)     // ahora que tenemos el valor empezamos con nuestra sentencia switch { }
+        {
+            case (int)SeleccionDeColor.rojo:  //los valores de colores que establecimos en los limites superiores o inferiores estan mapeados a valores enteros de 0 a 4
+                Debug.Log("El Color seleccionado es Rojo");
+                break; //break es para salirnos del switch
+            case (int)SeleccionDeColor.verde:
+                Debug.Log("El Color seleccionado es Verde");
+                break;
+            case (int)SeleccionDeColor.azul: // al enum (la lista de colores rojo, verde, etc) tiene valores enteros debemos poner (int) antes de seleccion de color para convertirlo en un valor entero a esto se le llama casteo
+                Debug.Log("El Color seleccionado es Azul");
+                break;
+            case (int)SeleccionDeColor.blanco:
+                Debug.Log("El Color seleccionado es Blanco");
+                break;
+
+            // agregamos when para agregar otra condicional si el enum da gris pero (en este caso) la variable01 no es verdadera entonces omitira esta línea y se ira a la siguiente que si sea verdade o falsa dependiendo del operado ( == > ! < <=) que hayamos puesto después de when
+            case (int)SeleccionDeColor.gris when Variable01 == true:
+                Debug.Log("El Color seleccionado es Gris");
+                break;
+
+
+            default: // default es por si el switch escoje uno valor que no definimos (de 5 para arriba)  esto si hacemos el limite superior a un número mayor de 4 (4 son los objetos que tenemos en el enum) si pasara de 5 a 10 ya nos daria el valor default
+                Debug.Log("Este valor no existe");
+                break;
+
+                //         // esto nos ayuda a tener ciertos estados dentro de mi juego dependiendo en que parte estemos (menú, gameplay, etc)
+                // }
+                //      -------------------
+                // Null conditioner operator "  ?   "
+                // aqui en el string ponemos una variable (resultado) y esta preguntara si el Valor 01 es mayor o igual que 0
+                // si es positivo dara  el primer resultado y si es negativo dara el segundo 
+                // toma en cuenta que esto es por que en la línea de codigo de arriba pusimos que el  Valor01 es igual al valor Random.Range de los limites superiores o inferiores con esos limites establecidos ya nos da el número random en este caso de -5 a 5
+                string resultado = (Valor01 >= 0) ? "El valor es positivo" : "el valor es negativo ";
+                Debug.Log(resultado);
 
 
 
 
 
 
-    }
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }
